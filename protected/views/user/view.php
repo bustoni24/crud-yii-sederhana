@@ -3,7 +3,7 @@
 /* @var $model AdminSkpi */
 
 $this->breadcrumbs=array(
-	'Admin Skpis'=>array('index'),
+	'Admin '=>array('index'),
 	$model->userId,
 );
 
@@ -16,7 +16,9 @@ $this->menu=array(
 );
 ?>
 
-<h1>View AdminSkpi #<?php echo $model->userId; ?></h1>
+<div class="box box-info">
+<div class="box-body">
+<h1>Lihat Admin Pendaftaran #<?php echo $model->userId; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -25,6 +27,7 @@ $this->menu=array(
 		'userUsername',
 		'userPassword',
 		'userRole',
-		'userProdi',
 	),
 )); ?>
+</div>
+</div>
