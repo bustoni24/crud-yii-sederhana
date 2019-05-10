@@ -15,8 +15,9 @@ $this->menu=array(
 	array('label'=>'Manage Member', 'url'=>array('admin')),
 );
 ?>
-
-<h1>View Member #<?php echo $model->id; ?></h1>
+<div class="box box-info">
+<div class="box-body">
+<h1>Lihat Data Member #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -30,3 +31,6 @@ $this->menu=array(
 		'noKtp',
 	),
 )); ?>
+
+</div>
+</div>

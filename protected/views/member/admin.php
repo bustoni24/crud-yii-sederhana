@@ -50,7 +50,11 @@ $('.search-form form').submit(function(){
 				'header'=>'Action', //column header
 				'type' =>'raw',
 				'value' =>
-				'(CHtml::link("<i class=\"fa fa-edit\" style=\"margin-top:3px;\"></i> ",
+				'(CHtml::link("<i class=\"fa fa-eye\" style=\"margin-top:3px;\"></i> ",
+						Yii::app()->request->baseUrl."/member/view/".$data->id,
+						array("class"=>"", "style"=>"width:25px; color:#333333;"))).
+						"&nbsp;&nbsp;&nbsp;".	
+				(CHtml::link("<i class=\"fa fa-edit\" style=\"margin-top:3px;\"></i> ",
 						Yii::app()->request->baseUrl."/member/update/".$data->id,
 						array("class"=>"", "style"=>"width:25px; color:#333333;"))).
 						"&nbsp;&nbsp;&nbsp;".				
